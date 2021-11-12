@@ -5,7 +5,12 @@ class WelcomeController extends Controller
 {
   public function index()
   {
-      return view('welcome');
-  }
+      $latestVisitors = Visitor::orderBy('created_at', 'desc')
+          ->take(5)
+          ->get();
 
+      return view('welcome', [
+          'latestVisitors' => $latestVisitors
+      ]);
+  }
 }

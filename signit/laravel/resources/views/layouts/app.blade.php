@@ -22,7 +22,8 @@
                   <li><a href="/login">Login</a></li>
               @else
                   <li><a href="/visitors">Visitors</a></li>
-                  <li><a href="/visitors/create">Sign the guestbook</a></li>
+                  <li><a href="/visitors/create">Sign the Guestbook</a></li>
+                  <li><a href="/logout">Log Out</a></li>
               @endif
           </ul>
         </section>
